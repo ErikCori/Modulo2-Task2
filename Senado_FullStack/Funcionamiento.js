@@ -40,8 +40,19 @@ function addTableToHtml(members){
 	table += '</tbody>';
 	return table;
 }
-									
-//Ejemplo
+/*									
+var se=[]
+var nodeList = document.querySelectorAll("input[name=party-filter]:checked)
+var arrayCheck = Array.from(nodeList);
+var table = doc
+		
+arrayCheck.forEach
+
+function filtrar(partios, members){
+	let items =[];
+	let aux =[];
+	partios.forEach(element =>)
+}*/
 
 
 
