@@ -6,7 +6,6 @@ if(document.getElementById('senate-data')){
 	createHouseTable();
 }
 
-createSenatorsTable();
 
 function createSenatorsTable(){
 	var tableFinal = addTableToHtml(data.results[0].members);
