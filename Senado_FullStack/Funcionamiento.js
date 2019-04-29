@@ -8,12 +8,14 @@ if(document.getElementById('senate-data')){
 
 
 function createSenatorsTable(){
-	var tableFinal = addTableToHtml(data.results[0].members);
+	var miembros = data.results[0].members;
+	var tableFinal = addTableToHtml(miembros);
 	var tableSenators = document.getElementById('senate-data');
 	tableSenators.innerHTML = tableFinal;
 }
 function createHouseTable(){
-	var tableFinal = addTableToHtml(data.results[0].members);
+	var miembros = data.results[0].members;
+	var tableFinal = addTableToHtml(miembros);
 	var tableHouse = document.getElementById('house-data');
 	tableHouse.innerHTML = tableFinal;
 }
@@ -40,6 +42,26 @@ function addTableToHtml(members){
 	table += '</tbody>';
 	return table;
 }
+
+//Funciones de filtrado
+function obtenerCheckBoxes(){
+	return Array.from(document.querySelectorAll('input[name=party-filter]:checked')).map(opt => opt.value);
+}
+
+function filtrar(members){
+	var filtros = obtenerCheckBoxes();
+	var miembrosFiltrados = members.filter(members => filtros.includes(members.party));
+	return miembrosFiltrados;
+} 
+
+
+
+
+
+
+
+
+
 /*									
 var se=[]
 var nodeList = document.querySelectorAll("input[name=party-filter]:checked)

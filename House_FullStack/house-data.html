@@ -40,10 +40,34 @@
 		<p>The major power of the House is to pass federal legislation that affects the entire country, although its bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no majority in the Electoral College.</p>
 		<p>Each U.S. state is represented in the House in proportion to its population as measured in the census, but every state is entitled to at least one representative. </p>
 	</div>
+	<div>
+		<form id="filters" class="row">
+			<div id="party-filter">
+				<label class="checkbox-inline">
+					<p>Filter by party:</p>
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" value="R" checked>Republican
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" value="D" checked>Democrat
+				</label>
+				<label class="checkbox-inline">
+					<input type="checkbox" value="I" checked>Independent
+				</label>
+			</div>
+			<label class="checkbox-inline">
+				<p>Filter by State:</p>
+			</label>
+			<div class="dropdown">
+				<button class="dropdown- toogle" type="button" data-toogle="dropdown">All<span class="caret"></span></button>
+			</div>
+		</form>
+	</div>
 	<table class="table" id="house-data"></table>
-	<footer class="panel-footer">
+	<div class="card-footer">
 		<p class="text-center">®2016 TGIF |All Rights Reserved</p>
-	</footer>
+	</div>
 	<script src="pro-congress-113-house.js"></script>
 	<script src="../Senado_FullStack/Funcionamiento.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
